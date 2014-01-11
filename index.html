@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>
-    Beth and Brian are getting married!
-  </title>
-</head>
-<body>
-  <h1>
-    It works!
-  </h1>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Beth and Brian's Wedding</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#locations">Locations</a></li>
+      </ul>
+    </div>
+    <!-- /Side Menu -->
+  
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+      <div class="top vert-text">
+        <h1>We're getting hitched!</h1>
+      </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
+  
+    <!-- Services -->
+    <div id="services" class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2 text-center">
+            <div class="service-item">
+              <div class="service-icon">
+                <img class="service-icon" src="img/wedding.png">
+              </div>
+              <h4>Service</h4>
+              <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="service-item">
+              <div class="service-icon">
+                <img class="service-icon" src="img/reception.png"> <!-- Wedding Cake by Nicolas Molès from The Noun Project -->
+              </div>
+              <h4>Reception</h4>
+              <p>Need to know how magnets work? Our problem solving solutions team can help you identify problems and conduct exploratory research.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Services -->
+
+    <!-- Callout -->
+    <div class="callout rings"> 
+      <div class="vert-text">
+      </div>
+    </div>
+    <!-- /Callout -->
+    
+    <!-- Services -->
+    <div id="services" class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2 text-center">
+            <div class="service-item">
+              <div class="service-icon">
+                <img class="service-icon" src="img/hotel.png">
+              </div>
+              <h4>Lodging</h4>
+              <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="service-item">
+              <div class="service-icon">
+                <img class="service-icon" src="img/registry.png"> <!-- Gift by alberto oliva vilches from The Noun Project -->
+              </div>
+              <h4>Registry</h4>
+              <p>Need to know how magnets work? Our problem solving solutions team can help you identify problems and conduct exploratory research.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Services -->
+
+    <!-- Map -->
+    <div id="locations" class="map">
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=206715425949158446568.0004e9d7996b363f00c31&amp;ie=UTF8&amp;ll=41.642503,-70.954617&amp;spn=0.019218,0.066125&amp;t=m&amp;iwloc=0004e9d79d23f37161956&amp;output=embed"><a href="https://maps.google.com/maps/ms?msa=0&amp;msid=206715425949158446568.0004e9d7996b363f00c31&amp;ie=UTF8&amp;ll=41.642503,-70.954617&amp;spn=0.019218,0.066125&amp;t=m&amp;iwloc=0004e9d79d23f37161956&amp;source=embed"></a></small></iframe>
+    </div>
+    <!-- /Map -->
+    
+    <!-- Callout -->
+    <div class="callout whales">
+      <div class="vert-text">
+        <h1>Have a whale of a time</h1>
+      </div>
+    </div>
+    <!-- /Callout -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+
+  </body>
+
 </html>
