@@ -120,7 +120,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  background: url(../img/bg.jpg) no-repeat center center scroll; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -192,7 +192,6 @@ div.service-icon {
   margin: 0 auto;
 }
 
-
 /* Call to Action */
 
 .call-to-action {
@@ -211,34 +210,11 @@ div.service-icon {
   height: 500px;
 }
 
-/* Footer */
-
-footer {
-  padding: 100px 0;
-}
-
-.top-scroll {
-  margin-top: 50px;
-}
-
-.top-scroll a {
-  text-decoration: none;
-  color: inherit;
-}
-
-i.scroll {
-  color: #333333;
-}
-
-i.scroll:hover {
-  color: #0a5175;
-}
 /* Responsive */
-
 @media (max-width: 768px) {
 
-  .map {
-	height: 75%;
-  }
+.map {
+	height: 50%;
+}
 
 }
