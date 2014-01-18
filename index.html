@@ -24,9 +24,11 @@
       <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <li><a href="#top">Top</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#lodging">Lodgings</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#reception">Reception</a></li>
+        <li><a href="#lodging">Lodging</a></li>
         <li><a href="#locations">Locations</a></li>
+        <li><a href="#registry">Registry</a></li>
       </ul>
     </div>
     <!-- /Side Menu -->
@@ -40,25 +42,53 @@
     <!-- /Full Page Image Header Area -->
   
     <!-- Services -->
-    <div id="events" class="services">
+    <div class="services">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
+          <div id="service" class="col-md-4 col-md-offset-2 text-center">
             <div class="service-item">
               <div class="service-icon">
                 <img class="service-icon" src="img/wedding.png">
               </div>
               <h4>Service</h4>
-              <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
+              <table class="details">
+                <tr>
+                  <td><i class="fa fa-calendar"></i></td>
+                  <td><time datetime="2014-10-11 14:00">October 11, 2014 @ 2 PM</time></td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-map-marker"></i></td>
+                  <td><a href="https://maps.google.com/maps?q=110+Summer+Street+New+Bedford,+MA+02740">
+                    <p>St Lawrence Martyr Church<br/>
+                         110 Summer Street<br/>
+                         New Bedford, MA 02740</p></a></td>
+                </tr>
+              </table>
             </div>
           </div>
-          <div class="col-md-4 text-center">
+          <div id="reception" class="col-md-4 text-center">
             <div class="service-item">
               <div class="service-icon">
                 <img class="service-icon" src="img/reception.png"> <!-- Wedding Cake by Nicolas Molès from The Noun Project -->
               </div>
               <h4>Reception</h4>
-              <p>Need to know how magnets work? Our problem solving solutions team can help you identify problems and conduct exploratory research.</p>
+              <table class="details">
+                <tr>
+                  <td><i class="fa fa-calendar"></i></td>
+                  <td><time datetime="2014-10-11 17:00">October 11, 2014 @ 5 PM</time></td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-map-marker"></i></td>
+                  <td><a href="https://maps.google.com/maps?q=18+Johnny+Cake+Hill+New+Bedford,+MA+02740">
+                    <p>New Bedford Whaling Museum<br/>
+                         18 Johnny Cake Hill<br/>
+                         New Bedford, MA 02740</p></a></td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-external-link"></i></td>
+                  <td><a href="http://www.whalingmuseum.org">WhalingMuseum.org</a></td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
@@ -77,22 +107,64 @@
     <div id="lodging" class="services">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
+          <div class="col-md-8 col-md-offset-2 text-center">
             <div class="service-item">
               <div class="service-icon">
                 <img class="service-icon" src="img/hotel.png">
               </div>
               <h4>Lodging</h4>
-              <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
+              <p>For those traveling long distances, we have room blocks at two hotels in the area so that you can have fun at the reception while safely and easily staying nearby.</p>
             </div>
           </div>
-          <div class="col-md-4 text-center">
-            <div class="service-item">
-              <div class="service-icon">
-                <img class="service-icon" src="img/registry.png"> <!-- Gift by alberto oliva vilches from The Noun Project -->
-              </div>
-              <h4>Registry</h4>
-              <p>Need to know how magnets work? Our problem solving solutions team can help you identify problems and conduct exploratory research.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2">
+              <hr>
+              <table class="details">
+                <tr>
+                  <td><i class="fa fa-map-marker"></i></td>
+                  <td><a href="https://maps.google.com/maps?q=185+MacArthur+Drive+New+Bedford,+MA+02740">
+                    <p>Fairfield Inn &amp; Suites by Marriott<br>
+                         185 MacArthur Drive<br>
+                         New Bedford, MA 02740</p></a></td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-phone"></i></td>
+                  <td><a href="tel:1-774-634-2000">1-774-634-2000</a></td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-external-link"></i></td>
+                  <td><a href="http://cwp.marriott.com/ewbfi/golinipartridge">Book Online</a></td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-asterisk"></i></td>
+                  <td>Book by September 11th for the group rate.</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-md-4">
+              <hr>
+              <table class="details">
+                <tr>
+                  <td><i class="fa fa-map-marker"></i></td>
+                  <td><a href="https://maps.google.com/maps?q=181+Faunce+Corner+Road+North+Dartmouth,+MA+02747">
+                    <p>Marriott Residence Inn<br>
+                         181 Faunce Corner Road<br>
+                         North Dartmouth, MA 02747</p></a></td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-phone"></i></td>
+                  <td><a href="tel:1-508-984-5858">1-508-984-5858</a></td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-external-link"></i></td>
+                  <td><a href="http://cwp.marriott.com/ewbri/golinipatridgewedding">Book Online</a></td>
+                </tr>
+                <tr>
+                  <td><i class="fa fa-asterisk"></i></td>
+                  <td>Book by September 10th for the group rate.</td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
@@ -102,9 +174,27 @@
 
     <!-- Map -->
     <div id="locations" class="map">
-      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=206715425949158446568.0004e9d7996b363f00c31&amp;ie=UTF8&amp;ll=41.642503,-70.954617&amp;spn=0.019218,0.066125&amp;t=m&amp;iwloc=0004e9d79d23f37161956&amp;output=embed"><a href="https://maps.google.com/maps/ms?msa=0&amp;msid=206715425949158446568.0004e9d7996b363f00c31&amp;ie=UTF8&amp;ll=41.642503,-70.954617&amp;spn=0.019218,0.066125&amp;t=m&amp;iwloc=0004e9d79d23f37161956&amp;source=embed"></a></small></iframe>
+      <iframe class="map-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=206715425949158446568.0004e9d7996b363f00c31&amp;ie=UTF8&amp;ll=41.642503,-70.954617&amp;spn=0.019218,0.066125&amp;t=m&amp;iwloc=0004e9d79d23f37161956&amp;output=embed"><a href="https://maps.google.com/maps/ms?msa=0&amp;msid=206715425949158446568.0004e9d7996b363f00c31&amp;ie=UTF8&amp;ll=41.642503,-70.954617&amp;spn=0.019218,0.066125&amp;t=m&amp;iwloc=0004e9d79d23f37161956&amp;source=embed"></a></small></iframe>
     </div>
     <!-- /Map -->
+    
+    <!-- Services -->
+    <div id="registry" class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <div class="service-item">
+              <div class="service-icon">
+                <img class="service-icon" src="img/registry.png"> <!-- Gift by alberto oliva vilches from The Noun Project -->
+              </div>
+              <h4>Registry</h4>
+              <p>TBD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Services -->
     
     <!-- Callout -->
     <div class="callout whales">

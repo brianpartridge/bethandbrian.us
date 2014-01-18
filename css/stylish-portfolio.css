@@ -5,6 +5,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Futura';
+  font-size: 18px;
 }
 
 .vert-text {
@@ -157,6 +158,20 @@ div.service-icon {
   text-align: center;
 }
 
+.details {
+  text-align: left;
+  vertical-align: top;
+}
+
+table { 
+  margin: auto; 
+}
+
+td {
+  padding-left: 20px;
+  vertical-align: top;
+}
+
 /* Callout */
 
 .callout {
@@ -207,14 +222,20 @@ div.service-icon {
 /* Map */
 
 .map {
-  height: 500px;
+  height: 400px;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 400px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
 
-.map {
-	height: 50%;
-}
+  html,
+  body {
+    font-size: 14px;
+  }
 
 }
