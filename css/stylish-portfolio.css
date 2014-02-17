@@ -1,12 +1,38 @@
 /* Global Styles */
 
+/* Colors
+orange #ff7f00
+lilac  #8e6877
+plumb  #512d44
+grey   #96938e
+*/
+
 html,
 body {
   height: 100%;
   width: 100%;
   font-family: 'Futura', Helvetica, Arial, sans-serif;
   font-size: 18px;
-  background: #7fbbda;
+  background: #512d44;
+}
+
+a {
+  color: #96938e;
+}
+
+a:hover {
+  color: #96938e;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #8e6877;
+  border-color: #8e6877;
 }
 
 .vert-text {
@@ -138,7 +164,7 @@ body {
 /* Services */
 
 .services {
-  background: #7fbbda;
+  background: #512d44;
   padding: 50px 0;
   color: #ffffff;
 }
@@ -212,7 +238,7 @@ td {
 
 .call-to-action {
   color: #ffffff;
-  background: #0a5175;
+  background: #512d44;
   padding: 50px 0;
 }
 
